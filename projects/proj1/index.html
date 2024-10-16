@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#226DAA" />
+    <title>Portfolio Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 class="gradient">Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class='click'><a href="#home">Home</a></li>
+                    <li class='click'><a href="#about">About me</a></li>
+                    <li class='click'><a href="#projects">Projects</a></li>
+                    <li class='click'><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="intro-section">
+            <h2>Hi I am</h2>
+            <h3>[Your Name]</h3>
+            <div class="intro-content">
+                <h1 class='gradient'>Data & Code Enthusiast</h1>
+                <img class='pfp' src='https://i.pinimg.com/originals/dc/44/48/dc4448ab4167de37e8080900d17852f4.png'
+                    alt='pfp'>
+            </div>
+
+            <!-- Contact icons directly under "Data & Code Enthusiast" -->
+            <div class="contact-section">
+                <a href="mailto:example@email.com" class="contact-icon">
+                    <span class="material-icons">email</span>
+                </a>
+                <a href="tel:+1234567890" class="contact-icon">
+                    <span class="material-icons">phone</span>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" class="icon-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                        alt="LinkedIn" width="20" height="20">
+                </a>
+                <a href="https://github.com/yourprofile" class="icon-link">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"
+                        width="20" height="20">
+                </a>
+            </div>
+            <div class='resume-container'>
+                <a href="path_to_resume.pdf" target="_blank" class="resume-button">Check Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class='about-title'>About Me</h2>
+            <h3 class='about-sub'>Digital Designer and Developer</h3>
+            <div class='about-content'>
+                <img class='about-pfp'
+                    src='https://thesheaf.com/wp-content/uploads/2018/04/studioghibli_jaymiestachyruk.png'
+                    alt='about-pfp'>
+                <p>I am a current junior at UC Berkeley, majoring in Data Science with a passion for business
+                    administration. My academic pursuits have been complemented by experience in data entry to conduct
+                    online research and analyze data using SQL, Pandas, and Python. I enjoy learning new languages and
+                    frameworks, and most currently working in: Python.<br>
+                    <br>
+                    Outside of building and programming, I enjoy reading fictional novels and creating digital art
+                    content on my social accounts.
+                </p>
+            </div>
+            <!-- <a href="#" class="totoro-button">
+              <img src="https://i.pinimg.com/originals/13/9b/65/139b65ded0bbd545dcb0b801204d909e.gif" alt="Totoro" class="totoro-img">
+                Nice to Meet You!
+            </a> -->
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="todo-header">
+            <h2>TODO List</h2>
+        </div>
+        <div class="todo-body">
+            <input type="text" id="todoText" class="todo-input" placeholder="Add your items" />
+            <img src="https://i.pinimg.com/originals/13/9b/65/139b65ded0bbd545dcb0b801204d909e.gif" alt="+"
+                id="AddUpdateClick" onclick="CreateToDoItems();" />
+        </div>
+        <h5 id="Alert"></h5>
+        <ul id="list-items" class="list-items"></ul>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class='contact-header'>Contact Me</h2>
+            <h3 class='contact-sub'>Cultivating Connections: Reach Out and Connect with Me</h3>
+            <form class="contact-form" action="your-form-processing-url" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name.." required><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email.." required><br>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here.." required></textarea><br>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <h2 class='footer-header'>Portfolio</h2>
+        <div class="footer-links">
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+            <ul>
+                <li>Email: <a href="mailto:your.email@domain.com">your.email@domain.com</a></li>
+                <li>Phone Number: 111-111-1111</li>
+            </ul>
+            <p>2024 Teresa Yu Kuang.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
