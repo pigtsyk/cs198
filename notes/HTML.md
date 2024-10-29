@@ -1,9 +1,9 @@
 # HTML (Hypertext Markup Language)
-.html = primary document (content of file)
+`.html` = primary document (content of file)
 
-.css = visuals
+`.css` = visuals
 
-.js = functionality
+`.js` = functionality
 
 ```
 <br> = break rule
@@ -28,13 +28,13 @@
 ```
 
 ## File Layout
-<!DOCTYPE html> ⇒ Declares the document as being of type html
+`<!DOCTYPE html>` ⇒ Declares the document as being of type html
 
-<p> <html>`` ⇒ anything within this tag is to be interpreted as html </p>
+`<p> <html>` ⇒ anything within this tag is to be interpreted as html </p>
   
-<head> ⇒ holds the metadata for the document
+`<head>` ⇒ holds the metadata for the document
   
-<body> ⇒ contains all the actual html that will be displayed on the site
+`<body>` ⇒ contains all the actual html that will be displayed on the site
 
 ```
 <!DOCTYPE html>
@@ -51,8 +51,8 @@
 ```
 
 ## Common HTML Tags
-<p> tag → Just regular text
-<h1> - <h6> tags → Headers
+`<p>` tag → Just regular text
+`<h1>` - <h6> tags → Headers
 
 ```
 <div>
@@ -71,9 +71,9 @@
 </a>
 ```
 
-<span> tag (optional) → Spans
-<img> tag → Image
-Inputs → <input> tag
+`<span>` tag (optional) → Spans
+`<img>` tag → Image
+Inputs → `<input>` tag
 ```
 <div>
   <input />
@@ -86,7 +86,7 @@ Inputs → <input> tag
 </div>
 ```
 
-<select>, <option> tags → Selects and Option
+`<select>`, `<option>` tags → Selects and Option
 ```
 <div>
   <select id="farm-animals">
@@ -97,11 +97,11 @@ Inputs → <input> tag
 </div>
 ```
 
-<div> tag → Divs
+`<div>` tag → Divs
 - Short for division
 - Generic container tag
 
-<form> tag → Form
+`<form>` tag → Form
   
 ```
 <form>
@@ -109,8 +109,8 @@ Inputs → <input> tag
   <textarea></textarea>
 </form>
 ```
-<ul>, <ol>, <li> tags → Lists
-<textarea> tag → Textarea
+`<ul>`, `<ol>`, `<li>` tags → Lists
+`<textarea>` tag → Textarea
   
 ```
 <textarea
@@ -120,7 +120,7 @@ Inputs → <input> tag
 ></textarea>
 ```
 
-<table>,<tr>, <td> tags → Table
+`<table>`, `<tr>`, `<td>` tags → Table
 - table creates a table
 - tr stands for table row
 - td stands for table data, basically represents a cell in your table
