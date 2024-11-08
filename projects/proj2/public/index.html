@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Playlist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .video {
+      margin-bottom: 20px;
+    }
+    .video img {
+      width: 200px;
+      height: 120px;
+    }
+    .video-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>YouTube Playlist</h1>
+  <div id="videos"></div>
+
+  <script>
+    fetch('/api/videos')
+      .then(response => response.json())
+      .then(videos => {
+        const videosContainer = document.getElementById('videos');
+        videos.forEach(video => {
+          const videoElement = document.createElement('div');
+          videoElement.classList.add('video');
+
+          videoElement.innerHTML = `
+            <img src="${video.thumbnail}" alt="${video.title}">
+            <div class="video-title">${video.title}</div>
+            <a href="https://www.youtube.com/watch?v=${video.videoId}" target="_blank">Watch Video</a>
+          `;
+          videosContainer.appendChild(videoElement);
+        });
+      });
+  </script>
+</body>
+</html>
