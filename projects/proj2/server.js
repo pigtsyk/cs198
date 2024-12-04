@@ -5,7 +5,7 @@ const app = express()
 const port = 3000;
 
 // YT API key and playlist ID
-const apiKey = 'AIzaSyCvOFbnF4WaJmGhFCtFLQm7zcOb_jDdbWY';
+const apiKey = 'api_key';
 const playlistId = 'PL2S5h5fo63DpkaH5u7DSBImZApcfAL4uY';
 const youtubeApiUrl = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${apiKey}`;
 
